@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span id="entree">Du contenu à déplacer</span> 
+  <span id="sortie"></span>
+  <script>
+    const entree = document.getElementById("entree");
+    const contenuEntree = entree.innerHTML
+    console.log(contenuEntree)
+    entree.innerHTML = 'Contenu déplacé !';
+    const sortie = document.getElementById('sortie');
+    sortie.innerHTML = contenuEntree;
+  </script>
+</body>
+</html>

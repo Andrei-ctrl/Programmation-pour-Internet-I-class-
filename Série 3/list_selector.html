@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <li>1er élément</li>
+      <li class="elementPair">2ème élément</li>
+      <li>3ème élément</li>
+      <li class="elementPair">4ème élément</li>
+      <li id="le5emeElement">5ème élément</li>
+  <script>
+    const premierElement = document.querySelector('li');
+    console.log(premierElement.innerHTML);
+    const elementPair = document.getElementsByClassName('elementPair');
+    elementPair[0].style.color = "blue"; 
+    elementPair[1].style.color = "red"; 
+    // 2nd solution "forEach"  elementsPairs.forEach((elementPair) => elementPair.style.color = 'blue')
+    const cinquiemeElement = document.getElementById('le5emeElement');
+    cinquiemeElement.style.backgroundColor = 'orange';
+    cinquiemeElement.style.color = 'white';
+  </script>
+</body>
+</html>

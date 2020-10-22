@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html from js</title>
+</head>
+<body>
+  <script>
+    const titre = document.createElement('h2');
+    titre.innerHTML = 'Exercice 4';
+    document.body.appendChild(titre);
+
+    const p1 = document.createElement('p');
+    p1.innerHTML = "Je crée les choses avec JS!";
+    document.body.appendChild(p1);
+
+    const p2 = document.createElement('p');
+    const span = document.createElement('span');
+      span.innerHTML = 'difficile';
+      span.style.color = 'red';
+      p2.innerHTML = 'C\'est ';
+      p2.appendChild(span);
+      p2.innerHTML += ' mais je sais que je vais y arriver !';
+      document.body.appendChild(p2);
+
+    const p3 = document.createElement('p');
+    const a = document.createElement('a');
+    a.innerHTML = "devdocs.io";
+    a.href = "https://devdocs.io/";
+    p3.innerHTML = "Si c'est trop dur, il y a toujours ";
+    p3.appendChild(a);
+    p3.innerHTML += "..."
+    document.body.appendChild(p3); 
+
+  </script>
+</body>
+</html>

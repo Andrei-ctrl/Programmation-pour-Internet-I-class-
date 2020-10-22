@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li>1er élément</li>
+    <li>2ème élément</li>
+    <li>3ème élément</li>
+  </ul>
+  
+  <script>
+    const couleurs = ["red", "blue", "green"];
+  	const lists = document.querySelectorAll("li");
+
+    console.log(lists)
+    //lists[0].style.color = couleurs[0];
+    //lists[1].style.color = couleurs[1];
+   //lists[2].style.color = couleurs[2]
+
+    lists.forEach((list, i) => list.style.color = couleurs[i])
+   
+  </script>
+</body>
+</html>

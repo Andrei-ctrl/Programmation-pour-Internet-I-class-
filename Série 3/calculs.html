@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Désinfectants</title>
+</head>
+<body>
+ <script >
+      //Creation de l'objet contenant les fonctions de calcul
+    const calculs = {
+      somme: function(n,m){
+        return n+m
+      },
+      soustraction: function(n,m){
+        return n-m;
+      },
+      multiplication: function(n,m){
+        return n*m;
+      },
+      division: function(n,m){
+        return n/m;
+      },
+      puissance2: function(n){
+        return n**2;
+      },
+      puissance3: function(n){
+        return n**3;
+      },
+      puissance: function(n,m){
+        return n**m;
+      },
+      racineCarre: function(n){
+        return Math.sqrt(n);
+      },
+      racine: function(n,m){
+        if(m >= 0){
+          return Math.pow(n,1/m);
+        }else{
+          alert("entrez un nombre positif")
+        }
+      },
+      modulo2: function(n){
+        return n%2;
+      },
+      modulo: function(n,m){
+        return n%m
+      }
+    }
+
+    //petite implémentation des calculs
+    document.write("8+4 = " + calculs.somme(8, 4) + " <br> 12^3 = " + calculs.puissance(12, 3) + " <br> 16 mod 12 = " + calculs.modulo(16, 12))
+ </script>
+  
+</body>
+</html>
